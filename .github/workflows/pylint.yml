@@ -24,7 +24,7 @@ jobs:
       - name: Lint with black
         run: black .
       - name: Commit changes
-        uses: hasnainkk-07/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Pylint: Auto Fixes"
           commit_options: "--no-verify"
