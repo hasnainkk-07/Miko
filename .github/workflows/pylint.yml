@@ -1,0 +1,34 @@
+name: PyLint
+on:
+  push:
+    paths:
+      - "**/*.py"
+  workflow_dispatch:
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10.x"
+      - name: Install libraries
+        run: pip install autopep8 autoflake isort black
+      - name: Check for showstoppers
+        run: |
+          autopep8 --verbose --in-place --recursive --aggressive .
+      - name: Remove unused imports
+        run: |
+          autoflake --in-place --recursive --remove-all-unused-imports --ignore-init-module-imports .
+      - name: Lint with black
+        run: black .
+      - name: Commit changes
+        uses: hasnainkk-07/git-auto-commit-action@v4
+        with:
+          commit_message: "Pylint: Auto Fixes"
+          commit_options: "--no-verify"
+          repository: .
+          commit_user_name: hasnainkk-07
+          commit_user_email: hasnainkk-07@users.noreply.github.com
+          commit_author: hasnainkk-07 <hasnainkk-07@users.noreply.github.com>
