@@ -28,7 +28,7 @@ jobs:
         with:
           commit_message: "Pylint: Auto Fixes"
           commit_options: "--no-verify"
-          repository: .
+          repository: https://github.com/hasnainkk-07/Miko
           commit_user_name: hasnainkk-07
           commit_user_email: hasnainkk-07@users.noreply.github.com
           commit_author: hasnainkk-07 <hasnainkk-07@users.noreply.github.com>
