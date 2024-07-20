@@ -452,9 +452,9 @@ async def del_blackliststicker(update: Update, context: ContextTypes.DEFAULT_TYP
                             trigger,
                         ),
                         parse_mode="markdown",
-                        message_thread_id=message.message_thread_id
-                        if chat.is_forum
-                        else None,
+                        message_thread_id=(
+                            message.message_thread_id if chat.is_forum else None
+                        ),
                     )
                     return
                 elif getmode == 4:
@@ -468,9 +468,9 @@ async def del_blackliststicker(update: Update, context: ContextTypes.DEFAULT_TYP
                                 trigger,
                             ),
                             parse_mode="markdown",
-                            message_thread_id=message.message_thread_id
-                            if chat.is_forum
-                            else None,
+                            message_thread_id=(
+                                message.message_thread_id if chat.is_forum else None
+                            ),
                         )
                     return
                 elif getmode == 5:
@@ -483,9 +483,9 @@ async def del_blackliststicker(update: Update, context: ContextTypes.DEFAULT_TYP
                             trigger,
                         ),
                         parse_mode="markdown",
-                        message_thread_id=message.message_thread_id
-                        if chat.is_forum
-                        else None,
+                        message_thread_id=(
+                            message.message_thread_id if chat.is_forum else None
+                        ),
                     )
                     return
                 elif getmode == 6:
@@ -500,9 +500,9 @@ async def del_blackliststicker(update: Update, context: ContextTypes.DEFAULT_TYP
                             trigger,
                         ),
                         parse_mode="markdown",
-                        message_thread_id=message.message_thread_id
-                        if chat.is_forum
-                        else None,
+                        message_thread_id=(
+                            message.message_thread_id if chat.is_forum else None
+                        ),
                     )
                     return
                 elif getmode == 7:
@@ -522,9 +522,9 @@ async def del_blackliststicker(update: Update, context: ContextTypes.DEFAULT_TYP
                             trigger,
                         ),
                         parse_mode="markdown",
-                        message_thread_id=message.message_thread_id
-                        if chat.is_forum
-                        else None,
+                        message_thread_id=(
+                            message.message_thread_id if chat.is_forum else None
+                        ),
                     )
                     return
             except BadRequest as excp:
