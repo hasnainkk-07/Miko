@@ -21,7 +21,7 @@
 
 <p align="center">
 <a href="https://github.com/Infamous-Hydra/YaeMiko/stargazers"><img src="https://img.shields.io/github/stars/Infamous-Hydra/YaeMiko?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/Infamous-Hydra/YaeMiko/network/members"> <img src="https://img.shields.io/github/forks/Infamous-Hydra/YaeMiko?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/hasnainkk-07/Miko/network/members"> <img src="https://img.shields.io/github/forks/Infamous-Hydra/YaeMiko?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/Infamous-Hydra/YaeMiko/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/python-telegram-bot/"> <img src="https://img.shields.io/pypi/v/python-telegram-bot?color=white&label=ptb&logo=python&logoColor=blue&style=for-the-badge" /></a>
